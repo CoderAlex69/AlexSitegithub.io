@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden; /* Prevent scroll on desktop */
 }
 
 .profile {
@@ -14,9 +15,10 @@ body {
     opacity: 1;
     border-radius: 10px;
     padding: 10px;
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     color: white;
+    overflow-y: auto; /* Ensure content can scroll if needed */
 }
 
 .header {
@@ -74,6 +76,23 @@ body {
 .button {
     cursor: pointer;
 }
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        overflow: auto; /* Enable scroll on mobile */
+    }
+
+    .profile {
+        height: 90vh; /* Adjust height to allow scrolling */
+        overflow-y: auto;
+    }
+}
+
 
 .button:hover {
     background-color: #555;
