@@ -174,7 +174,7 @@ body {
         text-align: center;
     }
 
-    .description {
+    .info { /* !!!!!!!!!!!! */
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -235,7 +235,7 @@ body {
     50% { border-color: transparent; }
 }
 
-.description {
+.info {
     overflow: hidden;
     border-right: .10em solid rgba(21, 255, 0, 0.678);
     white-space: nowrap;
@@ -249,10 +249,10 @@ body {
     text-shadow: 0 0 10px rgba(21, 255, 0, 0.781);
 }
 
-.description:nth-child(2) { animation-delay: 1s; }
-.description:nth-child(3) { animation-delay: 2s; }
+.info:nth-child(2) { animation-delay: 1s; }
+.info:nth-child(3) { animation-delay: 2s; }
 
-.description::after {
+.info::after {
     content: '';
     display: inline-block;
     width: 3em;
